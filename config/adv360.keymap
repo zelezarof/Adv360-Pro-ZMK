@@ -25,6 +25,58 @@
           quick_tap_ms = <175>;
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
+      }; 
+      
+      hml: hml {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HML";
+          bindings = <&kp>, <&kp>;
+
+          #binding-cells = <2>;
+          tapping-term-ms = <250>;
+          quick-tap-ms = <150>;
+          flavor = "balanced";
+          hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 35 36 52 66 65 67>;
+          hold-trigger-on-release;
+      };
+
+      hmr: hmr {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HMR";
+          bindings = <&kp>, <&kp>;
+
+          #binding-cells = <2>;
+          tapping-term-ms = <250>;
+          quick-tap-ms = <150>;
+          flavor = "balanced";
+          hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 52 53 60 61 62 63 64 65 66 67 68 70 69 38>;
+          hold-trigger-on-release;
+      };
+
+      hmlshift: hmlshift {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HMLSHIFT";
+          bindings = <&kp>, <&kp>;
+
+          #binding-cells = <2>;
+          tapping-term-ms = <200>;
+          quick-tap-ms = <150>;
+          flavor = "balanced";
+          hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 35 36 52 66 65 67>;
+          hold-trigger-on-release;
+      };
+
+      hmrshift: hmrshift {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HMRSHIFT";
+          bindings = <&kp>, <&kp>;
+
+          #binding-cells = <2>;
+          tapping-term-ms = <200>;
+          quick-tap-ms = <150>;
+          flavor = "balanced";
+          hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 52 53 60 61 62 63 64 65 66 67 68 70 69 38>;
+          hold-trigger-on-release;
       };
     };
 
