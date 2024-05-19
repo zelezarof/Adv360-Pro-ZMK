@@ -23,8 +23,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick_tap_ms = <200>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <250>;
             flavor = "tap-unless-interrupted";
             bindings = <&kp>, <&kp>;
         };
@@ -34,8 +34,8 @@
             label = "HM_LH";
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <250>
             flavor = "tap-unless-interrupted";
             hold-trigger-key-positions = <
                       7  8  9  10 11 12 13
