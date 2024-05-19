@@ -31,10 +31,9 @@
 
         hm_lh: hm_lh {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_LH";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <
@@ -49,10 +48,9 @@
 
         hm_rh: hm_rh {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_RH";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <
