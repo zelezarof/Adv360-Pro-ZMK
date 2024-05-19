@@ -56,7 +56,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <150>;
-            flavor = "balanced";
+            flavor = "tap-unless-interruped";
             hold-trigger-key-positions = <
                 0  1  2  3  4  5  6
                 14 15 16 17 18 19 20
