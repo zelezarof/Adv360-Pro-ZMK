@@ -19,21 +19,11 @@
 
         #endif
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <250>;
-            flavor = "tap-unless-interrupted";
-            bindings = <&kp>, <&kp>;
-        };
-
         hm_lh: hm_lh {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <
@@ -49,8 +39,8 @@
         hm_rh: hm_rh {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <
