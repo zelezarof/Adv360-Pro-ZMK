@@ -19,13 +19,15 @@
 
         #endif
 
-        hm_lh: hm_lh {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            label = "HML";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
             hold-trigger-key-positions = <
                       7  8  9  10 11 12 13
                       21 22 23 24 25 26 27
@@ -36,13 +38,15 @@
             hold-trigger-on-release;
         };
 
-        hm_rh: hm_rh {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            label = "HMR";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
             hold-trigger-key-positions = <
                 0  1  2  3  4  5  6
                 14 15 16 17 18 19 20
@@ -64,7 +68,7 @@
             //  14         15                16               17                 18            19      20                                                       21         22      23              24                  25                26                         27
                 &kp TAB    &kp Q             &kp W            &kp E              &kp R         &kp T   &none                                                    &none      &kp Y   &kp U           &kp I               &kp O             &kp P                      &kp BSLH
             //  28         29                30               31                 32            33      34        35         36            37         38         39         40      41              42                  43                44                         45
-                &kp ESC    &hm_lh LEFT_META A  &hm_lh LEFT_ALT S  &hm_lh LEFT_SHIFT D  &hm_lh LCTRL F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm_rh RCTRL J    &hm_rh RIGHT_SHIFT K  &hm_rh RIGHT_ALT L  &hm_rh RIGHT_META SEMICOLON  &kp SQT
+                &kp ESC    &hml LEFT_META A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hml RCTRL J    &hml RIGHT_SHIFT K  &hml RIGHT_ALT L  &hml RIGHT_META SEMICOLON  &kp SQT
             //  46         47                48               49                 50            51                           52            53                               54      55              56                  57                58                         59
                 &kp LSHFT  &kp Z             &kp X            &kp C              &kp V         &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA           &kp DOT           &kp FSLH                   &kp RSHFT
             //  60         61                62               63                 64                    65        66         67            68         69         70                 71              72                  73                74                         75
